@@ -1,0 +1,35 @@
+<script>
+  import Oxe from "$lib/Oxe.svelte";
+  export let data;
+</script>
+
+<svelte:head>
+  <title>{data.article.title} | Stack プログラミング言語 チュートリアル</title>
+</svelte:head>
+
+<div class="main">
+  <div class="explain">
+    <h2>{data.article.title}</h2>
+    <div>{@html data.article.content}</div>
+    {#if data.article.next != null}
+      <a href="/{data.article.next}">次のページへ</a>
+    {:else}
+      <a href="/">TOPページへ</a>
+    {/if}
+  </div>
+  <Oxe code={data.article.code} />
+</div>
+
+<style>
+  .main {
+    display: flex;
+    height: 100%;
+  }
+
+  .explain {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+</style>
