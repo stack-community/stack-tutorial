@@ -1,4 +1,5 @@
 <script>
+  import SvelteMarkdown from "svelte-markdown";
   import Oxe from "$lib/Oxe.svelte";
   export let data;
 </script>
@@ -10,7 +11,7 @@
 <div class="main">
   <div class="explain">
     <h2>{data.article.title}</h2>
-    <div>{@html data.article.content}</div>
+    <SvelteMarkdown source={data.article.content} />
     {#if data.article.next != null}
       <a href="/{data.article.next}">次のページへ</a>
     {:else}
