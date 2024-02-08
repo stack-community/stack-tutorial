@@ -1,0 +1,14 @@
+{
+  "name": "web_stack",
+  "version": "0.1.0",
+  "files": [
+    "web_stack_bg.wasm",
+    "web_stack.js",
+    "web_stack.d.ts"
+  ],
+  "module": "web_stack.js",
+  "types": "web_stack.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
