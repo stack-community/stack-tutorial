@@ -2,18 +2,41 @@
 /* eslint-disable */
 /**
 * @param {string} src
+* @returns {Result}
+*/
+export function run_stack(src: string): Result;
+/**
+*/
+export class Result {
+  free(): void;
+/**
+* @param {string} output
+* @param {string} log
+* @returns {Result}
+*/
+  static new(output: string, log: string): Result;
+/**
 * @returns {string}
 */
-export function run_stack(src: string): string;
+  output(): string;
+/**
+* @returns {string}
+*/
+  log(): string;
+}
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly run_stack: (a: number, b: number, c: number) => void;
-  readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
+  readonly run_stack: (a: number, b: number) => number;
+  readonly __wbg_result_free: (a: number) => void;
+  readonly result_new: (a: number, b: number, c: number, d: number) => number;
+  readonly result_output: (a: number, b: number) => void;
+  readonly result_log: (a: number, b: number) => void;
   readonly __wbindgen_malloc: (a: number, b: number) => number;
   readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+  readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
   readonly __wbindgen_free: (a: number, b: number, c: number) => void;
 }
 

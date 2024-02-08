@@ -22,7 +22,8 @@
   /**
    * @type {string}
    */
-  let result;
+  let output;
+  let log;
 
   // 実行ボタンを押した時にプログラムを実行 --- (*2)
   function run() {
@@ -36,7 +37,8 @@
       console.log(code);
       const r = run_stk(code);
       // 結果を出力
-      result = r;
+      output = r.output();
+      log = r.log()
     }
   }
 </script>
@@ -46,8 +48,10 @@
   <button class="btn form-control btn-primary" on:click={() => run()}>
     実行
   </button>
-  <hr />
-  <textarea id="result" rows="15" bind:value={result}></textarea>
+  <div class="split">
+    <textarea id="output" rows="15" bind:value={output}></textarea>
+    <textarea id="log" rows="15" bind:value={log}></textarea>
+  </div>
 </div>
 
 <style>
@@ -63,6 +67,15 @@
     border-color: lightslategray;
   }
 
+  .split {
+        display: flex;
+        height: 200px; /* 任意の高さに調整 */
+    }
+    .split textarea {
+        flex: 1;
+        box-sizing: border-box;
+    }
+
   #code,
   #result {
     background-color: lightgray;
@@ -70,4 +83,11 @@
     margin-bottom: 10px;
     padding: 10px;
   }
+
+   #code, #output, #log {
+        background-color:lightgray;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
 </style>
