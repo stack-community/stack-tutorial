@@ -76,8 +76,7 @@
         box-sizing: border-box;
     }
 
-  #code,
-  #result {
+  #code {
     background-color: lightgray;
     width: 100%;
     margin-bottom: 10px;
