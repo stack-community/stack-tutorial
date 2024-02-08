@@ -18,12 +18,6 @@
    * @type {string}
    */
   export let code;
-  /*let code =
-    "( (name) var\n\
-(Hello, name !) (name) name replace print\n\
-) (hello) var\n\
-\n\
-(world) hello eval";*/
 
   /**
    * @type {string}
@@ -42,7 +36,6 @@
       console.log(code);
       const r = run_stk(code);
       // 結果を出力
-      //console.log(r);
       result = r;
     }
   }
