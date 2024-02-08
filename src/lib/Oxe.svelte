@@ -62,7 +62,7 @@
   }
 
   .btn {
-    margin: 5px;
+    margin-bottom: 5px;
     background-color: lightslategray;
     border-color: lightslategray;
   }
