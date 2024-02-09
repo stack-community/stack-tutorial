@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import Oxe from "$lib/Oxe.svelte";
 </script>
 
@@ -10,7 +11,7 @@
   <div class="explain">
     <h2>Stackプログラミング言語チュートリアル</h2>
     <p>強力なスタック指向プログラミング言語、Stackのチュートリアルです。</p>
-    <a href="/">次のページへ</a>
+    <a href="{base}/">次のページへ</a>
   </div>
   <Oxe code={""} />
 </div>

@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
-import { articles } from '../data.js';
 import fs from 'fs';
+import fm from 'front-matter';
 
 export function load({ params }) {
     const filePath = `contents/article/${params.slug}`;
@@ -13,15 +13,13 @@ export function load({ params }) {
     const code = fs.readFileSync(`${filePath}/${codeFileName}`);
     if (!markdown || !code) throw error(404);
 
-    let a = articles.find((a) => a.slug === params.slug);
-    if (!a) throw error(404);
+    const parsedMarkdown = fm(markdown.toString());
 
     const article = {
-        slug: a.slug,
-        title: a.title,
-        content: markdown.toString(),
+        title: parsedMarkdown.attributes.title,
+        content: parsedMarkdown.body,
         code: code.toString(),
-        next: a.next
+        next: parsedMarkdown.attributes.next
     };
 
     return {
