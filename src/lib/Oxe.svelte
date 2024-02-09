@@ -68,13 +68,20 @@
   }
 
   .split {
-        display: flex;
-        height: 200px; /* 任意の高さに調整 */
-    }
-    .split textarea {
-        flex: 1;
-        box-sizing: border-box;
-    }
+      display: flex;
+      height: 200px; /* 任意の高さに調整 */
+  }
+
+  .split textarea {
+    resize: horizontal;
+  }
+
+  #output {
+      flex-grow: 15; /* outputテキストエリアの伸縮性を1に設定 */
+  }
+  #log {
+      flex-grow: 15; /* logテキストエリアの伸縮性を2に設定 */
+  }
 
   #code {
     background-color: lightgray;
