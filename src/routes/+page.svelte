@@ -26,6 +26,7 @@
     width: 50%;
     height: 100%;
     padding: 20px;
+    overflow: scroll;
     margin-top: 50px;
   }
 </style>
