@@ -24,7 +24,7 @@
 
   .explain {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     padding: 20px;
     overflow: auto;
     margin-top: 50px;
