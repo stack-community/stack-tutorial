@@ -59,6 +59,8 @@
     width: 50%;
     padding: 20px;
     margin-top: 50px;
+    margin-left: 50%;
+    position: fixed;
   }
 
   .btn {
