@@ -1,5 +1,1 @@
-( (name) var
-    (Hello, name !) (name) name replace print 
-) (hello) var
-
-(world) hello eval
+(Hello, world!) print
