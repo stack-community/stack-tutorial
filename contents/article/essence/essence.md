@@ -1,6 +1,6 @@
 ---
 title: Stackプログラミング言語の真髄
-next: sf-calculator
+next: null
 ---
 
 今回は Stack プログラミング言語の根幹をなす真髄に踏み込んでいきたいと思います。
