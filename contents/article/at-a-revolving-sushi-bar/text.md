@@ -1,6 +1,6 @@
 ---
 title: 回転寿司屋で
-next: null
+next: fizzbuzz
 ---
 
 Stack 電卓の扱いに慣れてきたところで、右下の枠に表示される　`Stack〔 ` ` 〕` の意味について説明しましょう。  
