@@ -1,6 +1,6 @@
 ---
 title: Stackプログラミング言語のチュートリアルへようこそ
-next: fizzbuzz
+next: sf-calculator
 ---
 
 Stack プログラミング言語は、スタック指向型の強力なプログラミング言語です。  
