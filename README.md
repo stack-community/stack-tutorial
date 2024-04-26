@@ -1,22 +1,23 @@
-# create-svelte
+# stack-tutorial
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+SvelteKit app for tutorials in the Stack programming language
 
-## Creating a project
+## How to add or edit contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+To add or edit contents of this tutorial, do like below;
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+1. Add a directory in contents/article. The directory’s name become a path to the content’s URL.
+2. Create a .stk file in which a sample code is written. The code is displayed in the online execution environment on the right side of the tutorial. The file name does not matter, as long as the file extension is .stk .
+3. Create a .md file containing the content of the tutorial. Write a Front Matter at the beginning of the file. Items are as follows;
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+   - title: title of the article
+   - next: name of the directory where the next article is written. If there is no next article, write null.
 
-## Developing
+4. Put files created in step 2 and 3 in the directory created in step 1.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Running locally
+
+Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -27,7 +28,7 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production version of this app:
 
 ```bash
 npm run build
