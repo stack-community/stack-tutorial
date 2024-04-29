@@ -35,7 +35,7 @@
       >
         <img
           alt="このサイトのリポジトリ"
-          src="/github-mark-white.png"
+          src="{base}/github-mark-white.png"
           style="height: 1.5em;"
         />
       </a>
