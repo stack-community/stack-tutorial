@@ -15,9 +15,32 @@
 </svelte:head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="{base}/">
-    Stack プログラミング言語　チュートリアル
-  </a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="navbar-brand" href="{base}/"
+        >Stack プログラミング言語　チュートリアル</a
+      >
+    </li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="navbar-brand" href="https://stack-community.github.io/stack-ja">
+        公式サイト
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="navbar-brand"
+        href="https://github.com/stack-community/stack-tutorial"
+      >
+        <img
+          alt="このサイトのリポジトリ"
+          src="/github-mark-white.png"
+          style="height: 1.5em;"
+        />
+      </a>
+    </li>
+  </ul>
 </nav>
 
 <slot />
