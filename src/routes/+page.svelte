@@ -24,8 +24,10 @@
 
   .explain {
     width: 50%;
-    height: 1000px;
-    padding: 20px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 35px;
     overflow: auto;
     margin-top: 50px;
   }

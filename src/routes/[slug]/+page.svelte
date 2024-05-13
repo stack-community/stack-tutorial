@@ -31,7 +31,10 @@
   .explain {
     width: 50%;
     height: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    overflow: auto;
     margin-top: 50px;
   }
 </style>
