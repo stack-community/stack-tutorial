@@ -24,7 +24,7 @@
   </ul>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="navbar-brand" href="https://stack-community.github.io/stack-ja">
+      <a class="navbar-brand" href="https://stack-community.github.io/stack-new">
         公式サイト
       </a>
     </li>
