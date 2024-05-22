@@ -7,6 +7,14 @@
 
 <svelte:head>
   <title>{data.article.title} | Stack プログラミング言語 チュートリアル</title>
+  <style>
+    pre {
+      background-color: #eeeeee;
+      padding-left: 1em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+  </style>
 </svelte:head>
 
 <div class="main">
